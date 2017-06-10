@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/half_default_margin"
+    android:paddingStart="@dimen/half_default_margin"
+    android:paddingLeft="@dimen/half_default_margin"
+    android:paddingEnd="@dimen/half_default_margin"
+    android:paddingRight="@dimen/half_default_margin">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/card_view_phone_height"
+        app:cardCornerRadius="@dimen/card_view_border_round"
+        android:layout_marginTop="@dimen/half_default_margin"
+        android:layout_marginStart="@dimen/half_default_margin"
+        android:layout_marginLeft="@dimen/half_default_margin"
+        android:layout_marginEnd="@dimen/half_default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/half_default_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/default_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_view_recipe_icon"
+                    android:contentDescription="@string/recipe_icon_content_desc"
+                    android:layout_width="@dimen/card_view_phone_image_view_size"
+                    android:layout_height="@dimen/card_view_phone_image_view_size"
+                    app:srcCompat="@drawable/recipe" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/default_margin"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_title"
+                        tools:text="Chocolate Pie"
+                        android:textSize="@dimen/card_view_phone_title_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_view_subtitle"
+                        tools:text="8 Ingredients, 16 Steps"
+                        android:textSize="@dimen/card_view_phone_subtitle_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_view"
+                android:layout_below="@id/linear_layout_information"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/half_default_margin"
+                android:padding="@dimen/zero"
+                android:text="@string/card_view_view_button_label"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

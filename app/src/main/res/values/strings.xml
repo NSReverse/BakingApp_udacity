@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Baking App</string>
+
+    <string name="card_view_view_button_label">View</string>
+
+    <string name="activity_view_step_detail">View Step</string>
+
+    <string name="unknown_recipe_name">[Unknown Name]</string>
+    <string name="unknown_ingredient_name">[Unknown Name]</string>
+
+    <string name="recipe_icon_content_desc">Recipe Image</string>
+    <string name="no_recipe_icon_content_desc">No Recipes Available.</string>
+
+    <string name="main_activity_error">Unable to load recipe data.</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="main_widget_title">Baking App Recipes</string>
+
+    <string name="action_ingredients">Ingredients</string>
+</resources>
